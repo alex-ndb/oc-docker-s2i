@@ -5,4 +5,5 @@ FROM registry.access.redhat.com/ubi7:latest
 # CMD ["/bin/bash", "-c", "sleep infinity"]
 #CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
 RUN yum update -y && yum install httpd -y && yum clean all
+RUN systemctl enable httpd
 CMD ["/sbin/init"]
