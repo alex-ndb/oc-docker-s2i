@@ -17,5 +17,8 @@
 
 FROM registry.access.redhat.com/ubi7:latest
 
-# CMD ["/bin/bash", "-c", "sleep infinity"]
+## This was original
+# CMD ["/bin/bash", "-c", "sleep infinity"] 
+
+## And this is edited
 CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
