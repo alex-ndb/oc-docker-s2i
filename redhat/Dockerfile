@@ -1,4 +1,5 @@
 # simple dockerfile to test OCP s2i using Dockerfile 
+# Updated in December 2023
 
 FROM registry.access.redhat.com/ubi9-init:latest
 
